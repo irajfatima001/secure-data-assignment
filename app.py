@@ -43,17 +43,6 @@ def download_link(data, filename):
     return f'<a href="data:file/txt;base64,{b64}" download="{filename}">📥 Download TXT File</a>'
 
 
-# ----------------------------- Theme Toggle ----------------------------- #
-st.markdown(
-    """
-    <style>
-    .dark-mode { background-color: #1e1e1e; color: white; }
-    .light-mode { background-color: #f8f9fa; color: black; }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
 
 
 # ----------------------------- Sidebar Navigation (with sync fix) ----------------------------- #
@@ -135,5 +124,3 @@ elif choice == "Login":
         else:
             st.error("❌ Wrong master password!")
 
-# ----------------------------- Close Theme Wrapper ----------------------------- #
-st.markdown("</div>", unsafe_allow_html=True)
